@@ -1,0 +1,12 @@
+PROJECT_NAME           = "Gestor de Inventario"
+PROJECT_BRIEF          = "Aplicacion de escritorio C++/Qt con SQLite"
+OUTPUT_DIRECTORY       = docs
+OUTPUT_LANGUAGE        = Spanish
+INPUT                  = .
+FILE_PATTERNS          = *.h *.cpp
+RECURSIVE              = NO
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+HAVE_DOT               = NO
