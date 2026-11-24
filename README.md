@@ -27,4 +27,4 @@ Ejecutar `doxygen Doxyfile`; el resultado queda en `docs/html/index.html`.
 | `ventanaprincipal.*` | Ventana principal (GUI) |
 
 ## Autores
-(Nombres del grupo)
+Geraldine Rocha Cardenas
