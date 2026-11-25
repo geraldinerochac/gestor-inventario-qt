@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Gestor de Inventario: Archivo de código fuente ventanaprincipal.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Gestor de Inventario
+   </div>
+   <div id="projectbrief">Aplicacion de escritorio C++/Qt con SQLite</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Buscar" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('ventanaprincipal_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">ventanaprincipal.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="ventanaprincipal_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#ifndef VENTANAPRINCIPAL_H</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#define VENTANAPRINCIPAL_H</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;QMainWindow&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="basedatos_8h.html">basedatos.h</a>&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">class </span>QLineEdit;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">class </span>QComboBox;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">class </span>QTableWidget;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">class </span>QLabel;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span></div>
+<div class="foldopen" id="foldopen00020" data-start="{" data-end="};">
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_ventana_principal.html">   20</a></span><span class="keyword">class </span><a class="code hl_function" href="class_ventana_principal.html#abbedfdc640de92a31b088cd1e515d4d0">VentanaPrincipal</a> : <span class="keyword">public</span> QMainWindow</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>{</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    Q_OBJECT</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keyword">explicit</span> <a class="code hl_function" href="class_ventana_principal.html#abbedfdc640de92a31b088cd1e515d4d0">VentanaPrincipal</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">private</span> slots:</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_ventana_principal.html#a74e1057330414079f1a3004d34e24af3">recargar</a>();</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_ventana_principal.html#a5ebc5e1557c514d2b803561969f6853d">agregar</a>();</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_ventana_principal.html#af23994b1cf009f398ac88ba09b2aaf77">editar</a>();</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_ventana_principal.html#a387467b1666b5c4b267d752f6ca3c061">eliminar</a>();</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_ventana_principal.html#a0a5fddbc78a6ef0e7ead084e0ea972e2">exportarCsv</a>();</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_ventana_principal.html#a1dea110ec15c22e69050bad5f179cde0">idSeleccionado</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_ventana_principal.html#a7e685e0b9d31adea7b3e37719a076b81">refrescarTipos</a>();</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="class_ventana_principal.html#a7cf0a657c6d01427fb481b5b645075fa">   45</a></span>    <a class="code hl_class" href="class_base_datos.html">BaseDatos</a> <a class="code hl_variable" href="class_ventana_principal.html#a7cf0a657c6d01427fb481b5b645075fa">m_bd</a>;             </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="class_ventana_principal.html#aeaf7bf9e07bb742ea4711dd6e6022182">   46</a></span>    QLineEdit *<a class="code hl_variable" href="class_ventana_principal.html#aeaf7bf9e07bb742ea4711dd6e6022182">m_busqueda</a>;      </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="class_ventana_principal.html#a60ee1eeed99b11b19e4508cea8213c08">   47</a></span>    QComboBox *<a class="code hl_variable" href="class_ventana_principal.html#a60ee1eeed99b11b19e4508cea8213c08">m_filtroTipo</a>;    </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="class_ventana_principal.html#a08daf3fa2d9151e2ade6903e1bd7bf22">   48</a></span>    QTableWidget *<a class="code hl_variable" href="class_ventana_principal.html#a08daf3fa2d9151e2ade6903e1bd7bf22">m_tabla</a>;      </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="class_ventana_principal.html#ae285103b5ec8537320dd3fcea57113be">   49</a></span>    QLabel *<a class="code hl_variable" href="class_ventana_principal.html#ae285103b5ec8537320dd3fcea57113be">m_alerta</a>;           </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="class_ventana_principal.html#a5d4c1d8ebecd97499e49fc5887cb6379">   50</a></span>    QLabel *<a class="code hl_variable" href="class_ventana_principal.html#a5d4c1d8ebecd97499e49fc5887cb6379">m_resumen</a>;          </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>};</div>
+</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="preprocessor">#endif </span><span class="comment">// VENTANAPRINCIPAL_H</span></div>
+<div class="ttc" id="abasedatos_8h_html"><div class="ttname"><a href="basedatos_8h.html">basedatos.h</a></div><div class="ttdoc">Definicion de la clase BaseDatos (acceso a SQLite).</div></div>
+<div class="ttc" id="aclass_base_datos_html"><div class="ttname"><a href="class_base_datos.html">BaseDatos</a></div><div class="ttdoc">Gestiona la persistencia de los articulos en una base SQLite.</div><div class="ttdef"><b>Definición</b> basedatos.h:23</div></div>
+<div class="ttc" id="aclass_ventana_principal_html_a08daf3fa2d9151e2ade6903e1bd7bf22"><div class="ttname"><a href="class_ventana_principal.html#a08daf3fa2d9151e2ade6903e1bd7bf22">VentanaPrincipal::m_tabla</a></div><div class="ttdeci">QTableWidget * m_tabla</div><div class="ttdoc">Tabla de articulos.</div><div class="ttdef"><b>Definición</b> ventanaprincipal.h:48</div></div>
+<div class="ttc" id="aclass_ventana_principal_html_a0a5fddbc78a6ef0e7ead084e0ea972e2"><div class="ttname"><a href="class_ventana_principal.html#a0a5fddbc78a6ef0e7ead084e0ea972e2">VentanaPrincipal::exportarCsv</a></div><div class="ttdeci">void exportarCsv()</div><div class="ttdoc">Exporta la lista mostrada a un archivo CSV.</div><div class="ttdef"><b>Definición</b> ventanaprincipal.cpp:224</div></div>
+<div class="ttc" id="aclass_ventana_principal_html_a1dea110ec15c22e69050bad5f179cde0"><div class="ttname"><a href="class_ventana_principal.html#a1dea110ec15c22e69050bad5f179cde0">VentanaPrincipal::idSeleccionado</a></div><div class="ttdeci">int idSeleccionado() const</div><div class="ttdoc">Devuelve el id de la fila seleccionada, o -1 si no hay.</div><div class="ttdef"><b>Definición</b> ventanaprincipal.cpp:172</div></div>
+<div class="ttc" id="aclass_ventana_principal_html_a387467b1666b5c4b267d752f6ca3c061"><div class="ttname"><a href="class_ventana_principal.html#a387467b1666b5c4b267d752f6ca3c061">VentanaPrincipal::eliminar</a></div><div class="ttdeci">void eliminar()</div><div class="ttdoc">Elimina el articulo seleccionado (con confirmacion).</div><div class="ttdef"><b>Definición</b> ventanaprincipal.cpp:206</div></div>
+<div class="ttc" id="aclass_ventana_principal_html_a5d4c1d8ebecd97499e49fc5887cb6379"><div class="ttname"><a href="class_ventana_principal.html#a5d4c1d8ebecd97499e49fc5887cb6379">VentanaPrincipal::m_resumen</a></div><div class="ttdeci">QLabel * m_resumen</div><div class="ttdoc">Resumen de totales.</div><div class="ttdef"><b>Definición</b> ventanaprincipal.h:50</div></div>
+<div class="ttc" id="aclass_ventana_principal_html_a5ebc5e1557c514d2b803561969f6853d"><div class="ttname"><a href="class_ventana_principal.html#a5ebc5e1557c514d2b803561969f6853d">VentanaPrincipal::agregar</a></div><div class="ttdeci">void agregar()</div><div class="ttdoc">Abre el formulario para agregar un articulo.</div><div class="ttdef"><b>Definición</b> ventanaprincipal.cpp:181</div></div>
+<div class="ttc" id="aclass_ventana_principal_html_a60ee1eeed99b11b19e4508cea8213c08"><div class="ttname"><a href="class_ventana_principal.html#a60ee1eeed99b11b19e4508cea8213c08">VentanaPrincipal::m_filtroTipo</a></div><div class="ttdeci">QComboBox * m_filtroTipo</div><div class="ttdoc">Filtro por tipo.</div><div class="ttdef"><b>Definición</b> ventanaprincipal.h:47</div></div>
+<div class="ttc" id="aclass_ventana_principal_html_a74e1057330414079f1a3004d34e24af3"><div class="ttname"><a href="class_ventana_principal.html#a74e1057330414079f1a3004d34e24af3">VentanaPrincipal::recargar</a></div><div class="ttdeci">void recargar()</div><div class="ttdoc">Recarga la tabla segun la busqueda y el filtro actuales.</div><div class="ttdef"><b>Definición</b> ventanaprincipal.cpp:121</div></div>
+<div class="ttc" id="aclass_ventana_principal_html_a7cf0a657c6d01427fb481b5b645075fa"><div class="ttname"><a href="class_ventana_principal.html#a7cf0a657c6d01427fb481b5b645075fa">VentanaPrincipal::m_bd</a></div><div class="ttdeci">BaseDatos m_bd</div><div class="ttdoc">Acceso a la base de datos.</div><div class="ttdef"><b>Definición</b> ventanaprincipal.h:45</div></div>
+<div class="ttc" id="aclass_ventana_principal_html_a7e685e0b9d31adea7b3e37719a076b81"><div class="ttname"><a href="class_ventana_principal.html#a7e685e0b9d31adea7b3e37719a076b81">VentanaPrincipal::refrescarTipos</a></div><div class="ttdeci">void refrescarTipos()</div><div class="ttdoc">Actualiza las opciones del filtro de tipo.</div><div class="ttdef"><b>Definición</b> ventanaprincipal.cpp:110</div></div>
+<div class="ttc" id="aclass_ventana_principal_html_abbedfdc640de92a31b088cd1e515d4d0"><div class="ttname"><a href="class_ventana_principal.html#abbedfdc640de92a31b088cd1e515d4d0">VentanaPrincipal::VentanaPrincipal</a></div><div class="ttdeci">VentanaPrincipal(QWidget *parent=nullptr)</div><div class="ttdoc">Construye la interfaz y abre la base de datos.</div><div class="ttdef"><b>Definición</b> ventanaprincipal.cpp:34</div></div>
+<div class="ttc" id="aclass_ventana_principal_html_ae285103b5ec8537320dd3fcea57113be"><div class="ttname"><a href="class_ventana_principal.html#ae285103b5ec8537320dd3fcea57113be">VentanaPrincipal::m_alerta</a></div><div class="ttdeci">QLabel * m_alerta</div><div class="ttdoc">Aviso de stock bajo.</div><div class="ttdef"><b>Definición</b> ventanaprincipal.h:49</div></div>
+<div class="ttc" id="aclass_ventana_principal_html_aeaf7bf9e07bb742ea4711dd6e6022182"><div class="ttname"><a href="class_ventana_principal.html#aeaf7bf9e07bb742ea4711dd6e6022182">VentanaPrincipal::m_busqueda</a></div><div class="ttdeci">QLineEdit * m_busqueda</div><div class="ttdoc">Caja de busqueda.</div><div class="ttdef"><b>Definición</b> ventanaprincipal.h:46</div></div>
+<div class="ttc" id="aclass_ventana_principal_html_af23994b1cf009f398ac88ba09b2aaf77"><div class="ttname"><a href="class_ventana_principal.html#af23994b1cf009f398ac88ba09b2aaf77">VentanaPrincipal::editar</a></div><div class="ttdeci">void editar()</div><div class="ttdoc">Abre el formulario para editar el articulo seleccionado.</div><div class="ttdef"><b>Definición</b> ventanaprincipal.cpp:191</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="ventanaprincipal_8h.html">ventanaprincipal.h</a></li>
+    <li class="footer">Generado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

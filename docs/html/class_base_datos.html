@@ -1,0 +1,505 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Gestor de Inventario: Referencia de la clase BaseDatos</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Gestor de Inventario
+   </div>
+   <div id="projectbrief">Aplicacion de escritorio C++/Qt con SQLite</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Buscar" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('class_base_datos.html','','class_base_datos-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Referencia de la clase BaseDatos</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Gestiona la persistencia de los articulos en una base SQLite.  
+ <a href="#details">Más...</a></p>
+
+<p><code>#include &lt;<a class="el" href="basedatos_8h_source.html">basedatos.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Métodos públicos</h2></td></tr>
+<tr class="memitem:a912098549cfc701d4990c93d8733b6b1" id="r_a912098549cfc701d4990c93d8733b6b1"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a912098549cfc701d4990c93d8733b6b1">BaseDatos</a> ()=default</td></tr>
+<tr class="memitem:a2b2344f0779f90ab1cc0c8639422fe5a" id="r_a2b2344f0779f90ab1cc0c8639422fe5a"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a2b2344f0779f90ab1cc0c8639422fe5a">~BaseDatos</a> ()</td></tr>
+<tr class="memdesc:a2b2344f0779f90ab1cc0c8639422fe5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cierra la conexion si esta abierta.  <br /></td></tr>
+<tr class="memitem:a42a7c44932d63832cb642f064a37d4d7" id="r_a42a7c44932d63832cb642f064a37d4d7"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a42a7c44932d63832cb642f064a37d4d7">abrir</a> (const QString &amp;ruta)</td></tr>
+<tr class="memdesc:a42a7c44932d63832cb642f064a37d4d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abre (o crea) la base de datos y la tabla de articulos.  <br /></td></tr>
+<tr class="memitem:a908d92e478f82bfd1bb497a4c7eccce5" id="r_a908d92e478f82bfd1bb497a4c7eccce5"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a908d92e478f82bfd1bb497a4c7eccce5">insertar</a> (const <a class="el" href="class_articulo.html">Articulo</a> &amp;a)</td></tr>
+<tr class="memdesc:a908d92e478f82bfd1bb497a4c7eccce5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inserta un articulo nuevo.  <br /></td></tr>
+<tr class="memitem:a9650427df004240c4bc6d05291ec50bb" id="r_a9650427df004240c4bc6d05291ec50bb"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a9650427df004240c4bc6d05291ec50bb">actualizar</a> (const <a class="el" href="class_articulo.html">Articulo</a> &amp;a)</td></tr>
+<tr class="memdesc:a9650427df004240c4bc6d05291ec50bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Actualiza el articulo con el mismo id.  <br /></td></tr>
+<tr class="memitem:aa5faa47345ffc97be1c7d1592d83ebf7" id="r_aa5faa47345ffc97be1c7d1592d83ebf7"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#aa5faa47345ffc97be1c7d1592d83ebf7">eliminar</a> (int id)</td></tr>
+<tr class="memdesc:aa5faa47345ffc97be1c7d1592d83ebf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Elimina el articulo con el id dado.  <br /></td></tr>
+<tr class="memitem:a21d372300813dca31351d8de6cee27cb" id="r_a21d372300813dca31351d8de6cee27cb"><td class="memItemLeft"><a class="el" href="class_articulo.html">Articulo</a>&#160;</td><td class="memItemRight"><a class="el" href="#a21d372300813dca31351d8de6cee27cb">obtener</a> (int id) const</td></tr>
+<tr class="memdesc:a21d372300813dca31351d8de6cee27cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtiene un articulo por id (id = 0 si no existe).  <br /></td></tr>
+<tr class="memitem:a2b4585017f64e5ab4faaec0fc45e7d7f" id="r_a2b4585017f64e5ab4faaec0fc45e7d7f"><td class="memItemLeft">QList&lt; <a class="el" href="class_articulo.html">Articulo</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a2b4585017f64e5ab4faaec0fc45e7d7f">listar</a> (const QString &amp;texto=QString(), const QString &amp;tipo=QString()) const</td></tr>
+<tr class="memdesc:a2b4585017f64e5ab4faaec0fc45e7d7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lista articulos aplicando filtros.  <br /></td></tr>
+<tr class="memitem:a2eacaf7ea67196affe3d9d5a28e7b06e" id="r_a2eacaf7ea67196affe3d9d5a28e7b06e"><td class="memItemLeft">QStringList&#160;</td><td class="memItemRight"><a class="el" href="#a2eacaf7ea67196affe3d9d5a28e7b06e">tipos</a> () const</td></tr>
+<tr class="memdesc:a2eacaf7ea67196affe3d9d5a28e7b06e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Devuelve los tipos distintos existentes en la base.  <br /></td></tr>
+<tr class="memitem:a196123be09d5ebdf6daee47d54173668" id="r_a196123be09d5ebdf6daee47d54173668"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a196123be09d5ebdf6daee47d54173668">contarStockBajo</a> () const</td></tr>
+<tr class="memdesc:a196123be09d5ebdf6daee47d54173668"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cuenta los articulos con stock bajo.  <br /></td></tr>
+<tr class="memitem:a5d816ce98541c59dea144ecb0d222a9b" id="r_a5d816ce98541c59dea144ecb0d222a9b"><td class="memItemLeft">QString&#160;</td><td class="memItemRight"><a class="el" href="#a5d816ce98541c59dea144ecb0d222a9b">ultimoError</a> () const</td></tr>
+<tr class="memdesc:a5d816ce98541c59dea144ecb0d222a9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Devuelve el texto del ultimo error.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Métodos privados</h2></td></tr>
+<tr class="memitem:adc3ff7089c1fb191d115bbad16c48737" id="r_adc3ff7089c1fb191d115bbad16c48737"><td class="memItemLeft"><a class="el" href="class_articulo.html">Articulo</a>&#160;</td><td class="memItemRight"><a class="el" href="#adc3ff7089c1fb191d115bbad16c48737">desdeConsulta</a> (const QSqlQuery &amp;q) const</td></tr>
+<tr class="memdesc:adc3ff7089c1fb191d115bbad16c48737"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construye un <a class="el" href="class_articulo.html" title="Representa un articulo del inventario.">Articulo</a> a partir de la fila actual de la consulta.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Atributos privados</h2></td></tr>
+<tr class="memitem:a14442a09dc219f6b88b744a8869f10db" id="r_a14442a09dc219f6b88b744a8869f10db"><td class="memItemLeft">QSqlDatabase&#160;</td><td class="memItemRight"><a class="el" href="#a14442a09dc219f6b88b744a8869f10db">m_db</a></td></tr>
+<tr class="memdesc:a14442a09dc219f6b88b744a8869f10db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Conexion SQLite.  <br /></td></tr>
+<tr class="memitem:a346863231570063b33e65c6aa7aafed1" id="r_a346863231570063b33e65c6aa7aafed1"><td class="memItemLeft">QString&#160;</td><td class="memItemRight"><a class="el" href="#a346863231570063b33e65c6aa7aafed1">m_error</a></td></tr>
+<tr class="memdesc:a346863231570063b33e65c6aa7aafed1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ultimo mensaje de error.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descripción detallada</h2>
+<div class="textblock"><p>Gestiona la persistencia de los articulos en una base SQLite. </p>
+<p>Aisla todo el codigo SQL del resto de la aplicacion: la interfaz solo trabaja con objetos <a class="el" href="class_articulo.html" title="Representa un articulo del inventario.">Articulo</a>. </p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Documentación de constructores y destructores</h2>
+<a id="a912098549cfc701d4990c93d8733b6b1" name="a912098549cfc701d4990c93d8733b6b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a912098549cfc701d4990c93d8733b6b1">&#9670;&#160;</a></span>BaseDatos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BaseDatos::BaseDatos </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel default">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2b2344f0779f90ab1cc0c8639422fe5a" name="a2b2344f0779f90ab1cc0c8639422fe5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b2344f0779f90ab1cc0c8639422fe5a">&#9670;&#160;</a></span>~BaseDatos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BaseDatos::~BaseDatos </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Cierra la conexion si esta abierta. </p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Documentación de funciones miembro</h2>
+<a id="a42a7c44932d63832cb642f064a37d4d7" name="a42a7c44932d63832cb642f064a37d4d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42a7c44932d63832cb642f064a37d4d7">&#9670;&#160;</a></span>abrir()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool BaseDatos::abrir </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>ruta</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Abre (o crea) la base de datos y la tabla de articulos. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ruta</td><td>Ruta del archivo .db </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>true si todo salio bien. </dd></dl>
+
+</div>
+</div>
+<a id="a9650427df004240c4bc6d05291ec50bb" name="a9650427df004240c4bc6d05291ec50bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9650427df004240c4bc6d05291ec50bb">&#9670;&#160;</a></span>actualizar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool BaseDatos::actualizar </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_articulo.html">Articulo</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>a</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Actualiza el articulo con el mismo id. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>true si tuvo exito. </dd></dl>
+
+</div>
+</div>
+<a id="a196123be09d5ebdf6daee47d54173668" name="a196123be09d5ebdf6daee47d54173668"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a196123be09d5ebdf6daee47d54173668">&#9670;&#160;</a></span>contarStockBajo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int BaseDatos::contarStockBajo </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Cuenta los articulos con stock bajo. </p>
+
+</div>
+</div>
+<a id="adc3ff7089c1fb191d115bbad16c48737" name="adc3ff7089c1fb191d115bbad16c48737"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc3ff7089c1fb191d115bbad16c48737">&#9670;&#160;</a></span>desdeConsulta()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_articulo.html">Articulo</a> BaseDatos::desdeConsulta </td>
+          <td>(</td>
+          <td class="paramtype">const QSqlQuery &amp;</td>          <td class="paramname"><span class="paramname"><em>q</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construye un <a class="el" href="class_articulo.html" title="Representa un articulo del inventario.">Articulo</a> a partir de la fila actual de la consulta. </p>
+
+</div>
+</div>
+<a id="aa5faa47345ffc97be1c7d1592d83ebf7" name="aa5faa47345ffc97be1c7d1592d83ebf7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5faa47345ffc97be1c7d1592d83ebf7">&#9670;&#160;</a></span>eliminar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool BaseDatos::eliminar </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Elimina el articulo con el id dado. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>true si tuvo exito. </dd></dl>
+
+</div>
+</div>
+<a id="a908d92e478f82bfd1bb497a4c7eccce5" name="a908d92e478f82bfd1bb497a4c7eccce5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a908d92e478f82bfd1bb497a4c7eccce5">&#9670;&#160;</a></span>insertar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool BaseDatos::insertar </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_articulo.html">Articulo</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>a</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inserta un articulo nuevo. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>true si tuvo exito. </dd></dl>
+
+</div>
+</div>
+<a id="a2b4585017f64e5ab4faaec0fc45e7d7f" name="a2b4585017f64e5ab4faaec0fc45e7d7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b4585017f64e5ab4faaec0fc45e7d7f">&#9670;&#160;</a></span>listar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QList&lt; <a class="el" href="class_articulo.html">Articulo</a> &gt; BaseDatos::listar </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>texto</em></span><span class="paramdefsep"> = </span><span class="paramdefval">QString()</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>tipo</em></span><span class="paramdefsep"> = </span><span class="paramdefval">QString()</span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Lista articulos aplicando filtros. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">texto</td><td>Texto a buscar en nombre o ubicacion (vacio = sin filtro). </td></tr>
+    <tr><td class="paramname">tipo</td><td>Tipo exacto (vacio = todos). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Lista ordenada por nombre. </dd></dl>
+
+</div>
+</div>
+<a id="a21d372300813dca31351d8de6cee27cb" name="a21d372300813dca31351d8de6cee27cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21d372300813dca31351d8de6cee27cb">&#9670;&#160;</a></span>obtener()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_articulo.html">Articulo</a> BaseDatos::obtener </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Obtiene un articulo por id (id = 0 si no existe). </p>
+
+</div>
+</div>
+<a id="a2eacaf7ea67196affe3d9d5a28e7b06e" name="a2eacaf7ea67196affe3d9d5a28e7b06e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2eacaf7ea67196affe3d9d5a28e7b06e">&#9670;&#160;</a></span>tipos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QStringList BaseDatos::tipos </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Devuelve los tipos distintos existentes en la base. </p>
+
+</div>
+</div>
+<a id="a5d816ce98541c59dea144ecb0d222a9b" name="a5d816ce98541c59dea144ecb0d222a9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d816ce98541c59dea144ecb0d222a9b">&#9670;&#160;</a></span>ultimoError()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString BaseDatos::ultimoError </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Devuelve el texto del ultimo error. </p>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Documentación de datos miembro</h2>
+<a id="a14442a09dc219f6b88b744a8869f10db" name="a14442a09dc219f6b88b744a8869f10db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14442a09dc219f6b88b744a8869f10db">&#9670;&#160;</a></span>m_db</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QSqlDatabase BaseDatos::m_db</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Conexion SQLite. </p>
+
+</div>
+</div>
+<a id="a346863231570063b33e65c6aa7aafed1" name="a346863231570063b33e65c6aa7aafed1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a346863231570063b33e65c6aa7aafed1">&#9670;&#160;</a></span>m_error</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString BaseDatos::m_error</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel mutable">mutable</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Ultimo mensaje de error. </p>
+
+</div>
+</div>
+<hr/>La documentación de esta clase está generada de los siguientes archivos:<ul>
+<li><a class="el" href="basedatos_8h_source.html">basedatos.h</a></li>
+<li><a class="el" href="basedatos_8cpp.html">basedatos.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="class_base_datos.html">BaseDatos</a></li>
+    <li class="footer">Generado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>
